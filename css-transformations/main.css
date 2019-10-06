@@ -1,0 +1,24 @@
+.box{
+    background-color: #aaaaaa;
+    height:50px;
+    width:50px;
+}
+.box:hover{
+    background-color: #000;
+    width: 100px;
+    height: 100px;
+    transform: rotate(150deg);
+    margin: 25px;
+    animation-name: grow;
+    transition: 2s;
+    transition-timing-function: ease ease-in-out;
+    animation-iteration-count: infinite;
+}
+@keyframes grow {
+    from{
+        height:100px;
+    }
+    to{
+        height:200px;
+    }
+}
